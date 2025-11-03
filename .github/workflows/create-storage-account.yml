@@ -3,6 +3,9 @@ name: Create Azure Storage Account
 on:
   workflow_dispatch:
 
+permissions:
+  id-token: write
+  
 jobs:
   create-storage-account:
     runs-on: ubuntu-latest
